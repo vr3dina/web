@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The films</title>
+        <style>
+            body {
+                font-family: 'century gothic', Arial, sans-serif;
+            }
+            img {
+                border: 5px solid black; 
+            }
+            a:hover img  {
+                border: 5px solid goldenrod;
+            }
+            .poster:hover .caption {
+                color: goldenrod;
+            }
+             .main-div {
+                margin: 0 auto;
+                max-width: 940px;
+            }
+            .poster {
+                width: 210px;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+                float: left;
+                margin-right: 20px;
+            }
+            .poster a {
+                display: block;
+                height: 100%;
+                text-decoration: none;
+            }
+            .caption {
+                margin-left: 10px;
+                color: black;
+                font-size: 18px;              
+            }
+             .sub-caption {
+                margin-left: 10px;
+                color: gray;              
+                font-size: 14px;
+            }
+            .title-film {
+                margin-left: 20px;
+                margin-bottom: 10px;
+                color: black;
+                font-family: Impact, fantasy;
+                font-weight: bold;
+                font-size: 40px;              
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-div">
+            <div class="title-film">
+                ФИЛЬМЫ
+            </div>
+            <div class="poster">
+                <a href="Contagion.html">
+                    <img src="./posters/Contagion.jpg" alt="Contagion" height="300" width="210">
+                    <div class="caption">Заражение</div>
+                    <div class="sub-caption">2011, фантастика</div>
+                </a>
+            </div>
+            <div class="poster">
+                <a href="JojoRabbit.html">
+                    <img src="./posters/JojoRabbit.jpg" alt="JojoRabbit" height="300" width="210">
+                    <div class="caption">Кролик Джоджо</div>
+                    <div class="sub-caption">2019, драма</div>
+                </a>
+            </div>
+            <div class="poster">
+                <a href="Friends.html">
+                <img src="./posters/Friends.jpg" alt="Friends" height="300" width="210">
+                    <div class="caption">Друзья</div>
+                    <div class="sub-caption">1994, сериал</div>
+                </a>
+            </div>
+            <div class="poster">
+                <a href="Intouchables.html">
+                <img src="./posters/Intouchables.jpg" alt="1+1" height="300" width="210">
+                    <div class="caption">1+1</div>
+                    <div class="sub-caption">2011, драма</div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
