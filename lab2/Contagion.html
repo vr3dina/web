@@ -3,83 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Заражение</title>
-         <style> 
-            img {
-                border: 5px solid black; 
-            }
-            body {
-                font-family: 'MS Sans Serif', sans-serif;
-                /* font-size: 11pt; */
-            }
-            .block-center {
-                margin: 0 auto;
-                width: 900px;
-                margin-top: 20px;
-            }
-            header {
-                font-size: 18px;
-                font-family: 'century gothic', sans-serif;
-                text-align: center;
-                color: white;
-                background-color: black;
-                width: 100%;
-            }
-            header a {
-                text-decoration-line: none;
-                color: white;
-            }
-            header a:hover {
-                color: goldenrod;
-            }
-            header td {
-                height: 40px;
-                width: 500px;
-                padding: 5px;
-            }
-            td {
-                height: 20px;
-            }
-            .content {
-                margin: 0 200px 0 200px;
-            }
-            .content-left-center {
-                margin-right: 200px;
-            }
-            .left-side-content {
-                width: 200px;
-                float: left;
-                margin-right: 30px;
-            }
-            .right-side-content {
-                margin-top: 40px;
-                width: 200px;
-                /* margin-right: 50px; */
-                float: right;
-            }
-            .film_title {
-                font-family: Impact, fantasy;
-                /* font-family: 'century gothic', sans-serif; */
-                font-weight: bold;
-                font-size: 40px;  
-                margin-bottom: 20px;            
-            }
-            .mark{
-                font-size: 40px;
-                /* font-weight: bold; */
-                font-family: 'century gothic', sans-serif;
-            }
-            article {
-                /* width: 530px; */
-                border: 1px solid black;
-                text-align: justify;
-                padding: 15px;
-                margin-bottom: 20px;
-            }
-            li {
-                list-style-type: none;
-                margin-left: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
@@ -96,68 +20,69 @@
         </header>
 
         <main class="block-center"> 
-            <div class="right-side-content">
+            <div class="right-side-content actors">
                 <ul><b>В главных ролях:</b>
                     <details>
                         <summary>Мэтт Дэймон</summary>
-                        <li><img src="./actors/md.jpg" alt="actor" width="100"></li>
+                        <li><img src="./actors/md.jpg"></li>
                     </details>              
                     <details>
                         <summary>Лоренс Фишбёрн</summary>
-                        <li><img src="./actors/md.jpg" alt="actor" width="100"></li>
+                        <li><img src="./actors/md.jpg"></li>
                     </details>
                     <details>
                         <summary>Джуд Лоу</summary>
-                        <li><img src="./actors/md.jpg" alt="actor" width="100"></li>
+                        <li><img src="./actors/md.jpg"></li>
                     </details>
                     <details>
                         <summary>Кейт Уинслет</summary>
-                        <li><img src="./actors/md.jpg" alt="actor" width="100"></li>
+                        <li><img src="./actors/md.jpg"></li>
                     </details>
                 </ul>
             </div>
-            <div class="left-side-content">
-                <img src="posters/Contagion.jpg" alt="Contagion" width="200">
+            <div class="left-side-content poster">
+                <img src="posters/Contagion.jpg">
             </div>
-                        <div class="content">
-                            <div class=film_title>Заражение</div>
-                            <table>
-                                    <tr> <td><b>год</b></td> <td>2011</td> </tr>
-                                    <tr> <td><b>страна</b></td> <td>ОАЭ, США</td> </tr>
-                                    <tr> <td><b>слоган</b></td> <td>«Скоро мир будет инфицирован»</td> </tr>
-                                    <tr> <td><b>режиссер</b></td> <td>Стивен Содерберг</td> </tr>
-                                    <tr> <td><b>сценарий</b></td> <td>Скотт З. Бёрнс</td> </tr>
-                                    <tr> <td><b>жанр</b></td> <td>фантастика, боевик, триллер, драма</td> </tr>
-                                    <tr> <td><b>бюджет</b></td> <td>$60 000 000</td> </tr>
-                                    <tr> <td><b>сборы в США</b></td> <td>$75 658 097</td> </tr>
-                                    <tr> <td><b>сборы в мире</b></td> <td>+ $60 857 770 = $136 515 867</td> </tr>
-                                    <tr> <td><b>премьера (мир)</b></td> <td>3 сентября 2011</td> </tr>
-                                    <tr> <td><b>время</b></td> <td>106 мин. / 01:46</td> </tr>
-                            </table>
-                        </div>
-            <div class="content-left-center" align="justify">
+            <div class="content">
+                <div class=film_title>Заражение</div>
+                <table>
+                        <tr> <td><b>год</b></td> <td>2011</td> </tr>
+
+                        <tr> <td><b>страна</b></td> <td>ОАЭ, США</td> </tr>
+                        <tr> <td><b>слоган</b></td> <td>«Скоро мир будет инфицирован»</td> </tr>
+                        <tr> <td><b>режиссер</b></td> <td>Стивен Содерберг</td> </tr>
+                        <tr> <td><b>сценарий</b></td> <td>Скотт З. Бёрнс</td> </tr>
+                        <tr> <td><b>жанр</b></td> <td>фантастика, боевик, триллер, драма</td> </tr>
+                        <tr> <td><b>бюджет</b></td> <td>$60 000 000</td> </tr>
+                        <tr> <td><b>сборы в США</b></td> <td>$75 658 097</td> </tr>
+                        <tr> <td><b>сборы в мире</b></td> <td>+ $60 857 770 = $136 515 867</td> </tr>
+                        <tr> <td><b>премьера (мир)</b></td> <td>3 сентября 2011</td> </tr>
+                        <tr> <td><b>время</b></td> <td>106 мин. / 01:46</td> </tr>
+                </table>
+            </div>
+            <div class="content-left-center">
                 <p> Международная организация врачей совместно с Центром по контролю и профилактике заболеваний США пытается помешать распространению смертельного вируса.</p>
             </div>
             <div class="content-left-center">
-                <div class="left-side-content" style="width: 80px;">
-                    <span style="font-size: 15px;">КиноПоиск</span><br>             
+                <div class="left-side-content mark_KP">
+                    <span>КиноПоиск</span><br>             
                     <span class="mark">6.45</span><br>
                 </div>
-                <div style="margin-left: 80x;">
-                    <span style="font-size: 15px;">IMDb</span><br>
+                <div class="mark_IMDb">
+                    <span>IMDb</span><br>
                     <span class="mark">6.7</span>
                 </div>
             </div> 
 
             <div class="content-left-center">
-                <p style="font-size: 25px; font-weight: bold;">Трейлер</p>
+                <h2>Трейлер</h2>
                 <iframe width="700" height="385" src="https://www.youtube.com/embed/U_pRxRy78IM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div class="content-left-center">
-                <p style="font-size: 25px; font-weight: bold;">Отзывы</p>
+                <h2>Отзывы</h2>
                 <article>
-                    <p style="font-size: 20px; font-weight: bold;">016Nik</p>
+                    <h3>016Nik</h3>
                     <p><strong> Теория хаоса&#x1f60e</strong>
                     <p>Фильм повествует о новом виде вируса, убивающего человека в считаные сутки. И вирус настолько заразный, что достаточно потрогать поверхность, где только что касался зараженный человек.</p>
                     <p>Развитие пандемии показывают зрителю с разных точек зрения. Это жизни самых разных людей, но в основном специалистов по данной проблеме. И все сюжетные линии так органично связаны между собой, что совсем не нужно напрягать внимание к деталям сюжета, чтобы понять суть. И все легко сливается в единый сюжет.</p>
@@ -166,7 +91,7 @@
                     <p>7 из 10</p>
                 </article>
                 <article>
-                    <p style="font-size: 20px; font-weight: bold;">Wikia</p>
+                    <h3>Wikia</h3>
                     <p><strong> Вирус, взявшийся неизвестно откуда</strong> </p>
                     <p>Почему-то мне нравятся фильмы, где человечество медленно, но уверенно умирает от неизлечимой болезни. Но самый лучший фильм про эпидемию, который я видела — Обитель зла 1. Но вот на экране творение Стивена Содерберга — Заражение. Ну что же, посмотрим…</p>
                     <p><strong>Сюжет</strong></p>

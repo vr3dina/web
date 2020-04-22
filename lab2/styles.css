@@ -1,0 +1,100 @@
+.poster img {
+    border: 5px solid black; 
+    width: 200px;
+    alt: "poster";
+}
+body {
+    font-family: 'MS Sans Serif', sans-serif;
+    /* font-size: 11pt; */
+}
+.block-center {
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 20px;
+}
+header {
+    font-size: 18px;
+    font-family: 'century gothic', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+header a {
+    text-decoration-line: none;
+    color: white;
+}
+header a:hover {
+    color: goldenrod;
+}
+header td {
+    height: 40px;
+    width: 500px;
+    padding: 5px;
+}
+td {
+    height: 20px;
+}
+.content {
+    margin: 0 200px 0 200px;
+}
+.content-left-center {
+    margin-right: 200px;
+}
+.left-side-content {
+    width: 200px;
+    margin-right: 30px;
+    float: left;
+}
+.right-side-content {
+    width: 200px;
+    float: right;
+}
+.actors {
+    margin-top: 40px;
+}
+.actors li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+.actors img {
+    width: 100px;
+    alt: "actor";
+}
+.film_title {
+    font-family: Impact, fantasy;
+    /* font-family: 'century gothic', sans-serif; */
+    font-weight: bold;
+    font-size: 40px;  
+    margin-bottom: 15px;            
+}
+.mark {
+    font-size: 40px;
+    /* font-weight: bold; */
+    font-family: 'century gothic', sans-serif;
+}
+.mark_KP {
+    width: 80px;
+    font-size: 15px;
+}
+.mark_IMDb {
+    margin-left: 80px;
+    font-size: 15px;
+}
+article {
+    /* width: 530px; */
+    border: 1px solid black;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'century gothic', sans-serif;
+}
+h3 {
+    font-size: 20px;
+}
