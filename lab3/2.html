@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <style>
+        body {
+            font: 14px/1.5 serif;
+        }
+        ul {
+            margin: 0;
+        }
+        #each li {
+            margin-bottom: 14px;
+        }
+        #each li:last-child {
+            margin-bottom: 0px;
+        }
+        #nth li:nth-child(2n) {
+            margin-bottom: 14px;
+        }
+        #nth li:last-child {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    Текст вверху без отступа от списка
+    <ul id="each">
+        <li>Маша</li>
+        <li>Паша</li>
+        <li>Даша</li>
+        <li>Женя</li>
+        <li>Саша</li>
+        <li>Гоша</li>
+    </ul>
+    Текст внизу списка без отступа от списка
+    
+    <br><br>
+    
+    Текст вверху без отступа от списка
+    <ul id="nth">
+        <li>Маша</li>
+        <li>Паша</li>
+        <li>Даша</li>
+        <li>Женя</li>
+        <li>Саша</li>
+        <li>Гоша</li>
+    </ul>
+    Текст внизу списка без отступа от списка
+</body>
+
+</html>

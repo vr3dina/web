@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <style>
+        input[type = "checkbox"] {
+            box-shadow: 1px 1px 3px 0px green;
+        }
+        input[type = "checkbox"]:checked {
+            box-shadow: 1px 1px 3px 0px red
+        }
+        .cb {
+            background-color: lightgrey
+        }
+        #message {
+            background-color: lightskyblue
+        }
+        [id ^= "message-"] {
+            border: 2px solid black;
+            margin: 3px;
+        }
+        [href $= "zip"]:hover {
+            color: red;
+        }
+        [data-action ~= "delete" ] {
+            color: forestgreen;
+        }
+        [data-action *= "delete"] {
+            background-color: khaki;
+        }
+        #messages li:nth-child(2n){
+            border-style: dashed;
+            border-width: 1px;
+        }
+        h3#widget-title + * {
+            font-weight: bold;
+            color: red;
+        }
+        h3#widget-title ~ a {
+            font-style: italic;
+        }
+        #messages a:hover:last-child {
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="checkbox">cat</input>
+        <input type="checkbox" checked>dog</input>
+    </div>
+    <br>
+    <div class="cb">
+        <input type="checkbox" checked>dog</input>
+    </div>
+    <input type="text" id="message">
+
+    <h3 id="widget-title">Сообщение</h3>
+    <ul id="messages">
+        <li id="message-1">Сообщение 1</li>
+        <li id="message-2">Сообщение 2</li>
+        <li id="message-3" data-action="delete">Сообщение 3</li>
+        <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+        <li id="message-5" data-action="edit delete">Сообщение 5</li>
+        <li><a href="#">...</a></li>
+    </ul>
+    <a href="http://site.com/list.zip">Ссылка на архив</a>
+    <a href="http://site.com/list.pdf">..и на pdf</a>
+</body>
+
+</html>
