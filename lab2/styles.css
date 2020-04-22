@@ -1,15 +1,24 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'MS Sans Serif', sans-serif;
+    display: grid;
+    grid-template-columns: 200px 500px 200px;
+    grid-template-rows: 50px auto auto auto auto;
+    grid-gap: 20px;
+}
+.menu {
+    grid-row: 1 / 2;
+    grid-column: 1/4;
+}
+.poster {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
 .poster img {
     border: 5px solid black; 
     width: 200px;
     alt: "poster";
-}
-body {
-    font-family: 'MS Sans Serif', sans-serif;
-}
-.block-center {
-    margin: 0 auto;
-    width: 900px;
-    margin-top: 20px;
 }
 header {
     font-size: 18px;
@@ -36,31 +45,32 @@ td {
     height: 20px;
     vertical-align: top;
     min-width: 150px;
-}
+} 
 .content {
-    margin: 0 200px 0 200px;
+    grid-column: 2/4;
+    grid-row: 2/3;
 }
-.content-left-center {
-    margin-right: 200px;
+.trailer {
+    grid-column: 2 / 3;
+    grid-row-start: 4;
 }
-.left-side-content {
-    width: 200px;
-    margin-right: 30px;
-    float: left;
+.comments {
+    grid-column: 2 / 3;
+    grid-row-start: 5;
 }
-.right-side-content {
-    width: 200px;
-    float: right;
+.actors-block {
+    grid-column: 1 / 4;
+    grid-row-start: 3;
 }
 .actors {
-    margin-top: 40px;
-}
-.actors li {
-    list-style-type: none;
-    margin-left: 20px;
+    /* margin-top: 40px; */
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: row;
 }
 .actors img {
-    width: 100px;
+    width: 90px;
     alt: "actor";
 }
 .film_title {
@@ -70,6 +80,10 @@ td {
     margin-bottom: 15px;            
 }
 .mark {
+    display: flex;
+    flex-direction: row;
+}
+.mark_digit {
     font-size: 40px;
     font-family: 'century gothic', sans-serif;
 }
@@ -82,7 +96,7 @@ td {
     font-size: 15px;
 }
 article {
-    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
     text-align: justify;
     padding: 15px;
     margin-bottom: 20px;
@@ -98,6 +112,7 @@ h3 {
     font-size: 20px;
 }
 iframe {
-    width: 700px;
-    height: 385px;
+    width: 500px;
+    height: 285px;
+    border: 7px black solid;
 }
