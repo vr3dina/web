@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>1+1</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="./scripts.js"></script>
     </head>
 
     <body>
@@ -82,7 +83,7 @@
             <iframe src="https://www.youtube.com/embed/tTwFeGArcrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="comments">
+        <div class="comments" id="comments_block">
             <h2>Отзывы</h2>
             <article>
                 <h3>PALPATINE</h3>
@@ -93,7 +94,7 @@
                 <p>10 из 10</p>
             </article>
             <article>
-                    <h2>Extracowboy</h2>
+                    <h3>Extracowboy</h3>
                     <p><strong>Лучший французский фильм</strong></p>
                     <p>Филипп оказался парализованным после несчастного случая. И после кастинга на роль помощника он нанимает человека, 
                         который менее всего подходит к данной работе — молодого Дрисса.</p>
@@ -106,5 +107,26 @@
                     <p>10 из 10</p>
             </article>
         </div>
+
+         <form name="addReview" class="add_review" action="#" method="get">
+            <h3>Добавить Отзыв</h3>
+            <div class="review-block">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <br>
+            <div class="review-block">
+                <label for="titleReview">Заголовок</label>
+                <input type="text" name="titleReview" id="titleReview">
+            </div>
+            <div class="review-block">
+                <label for="textReview">Отзыв</label> <br>
+                <textarea name="textReview" id="textReview"></textarea>
+            </div>
+            <br>
+            <div class="review-block">
+                <input type="button" value="Опубликовать" onclick="publishReview()">
+            </div>
+        </form>
     </body>
 </html>

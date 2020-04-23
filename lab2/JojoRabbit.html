@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Кролик Джоджо</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="./scripts.js"></script>
     </head>
 
     <body>
@@ -86,7 +87,7 @@
             <iframe src="https://www.youtube.com/embed/RzifOVEYATs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="comments">
+        <div class="comments" id="comments_block">
             <h2>Отзывы</h2>
             <article>
                 <h3>gordy</h3>
@@ -108,5 +109,25 @@
                 <p>8 из 10&#x1f601</p>
             </article>
         </div>
+         <form name="addReview" class="add_review" action="#" method="get">
+            <h3>Добавить Отзыв</h3>
+            <div class="review-block">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <br>
+            <div class="review-block">
+                <label for="titleReview">Заголовок</label>
+                <input type="text" name="titleReview" id="titleReview">
+            </div>
+            <div class="review-block">
+                <label for="textReview">Отзыв</label> <br>
+                <textarea name="textReview" id="textReview"></textarea>
+            </div>
+            <br>
+            <div class="review-block">
+                <input type="button" value="Опубликовать" onclick="publishReview()">
+            </div>
+        </form>
     </body>
 </html>
