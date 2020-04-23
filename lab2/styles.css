@@ -1,0 +1,118 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'MS Sans Serif', sans-serif;
+    display: grid;
+    grid-template-columns: 200px 500px 200px;
+    grid-template-rows: 50px auto auto auto auto;
+    grid-gap: 20px;
+}
+.menu {
+    grid-row: 1 / 2;
+    grid-column: 1/4;
+}
+.poster {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.poster img {
+    border: 5px solid black; 
+    width: 200px;
+    alt: "poster";
+}
+header {
+    font-size: 18px;
+    font-family: 'century gothic', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+header a {
+    text-decoration-line: none;
+    color: white;
+}
+header a:hover {
+    color: goldenrod;
+}
+header td {
+    height: 40px;
+    width: 500px;
+    padding: 5px;
+    vertical-align: middle;
+}
+td {
+    height: 20px;
+    vertical-align: top;
+    min-width: 150px;
+} 
+.content {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.trailer {
+    grid-column: 2 / 3;
+    grid-row-start: 4;
+}
+.comments {
+    grid-column: 2 / 3;
+    grid-row-start: 5;
+}
+.actors-block {
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+}
+.actors {
+    /* margin-top: 40px; */
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: row;
+}
+.actors img {
+    width: 90px;
+    alt: "actor";
+}
+.film_title {
+    font-family: Impact, fantasy;
+    font-weight: bold;
+    font-size: 40px;  
+    margin-bottom: 15px;            
+}
+.mark {
+    display: flex;
+    flex-direction: row;
+}
+.mark_digit {
+    font-size: 40px;
+    font-family: 'century gothic', sans-serif;
+}
+.mark_KP {
+    width: 80px;
+    font-size: 15px;
+}
+.mark_IMDb {
+    margin-left: 80px;
+    font-size: 15px;
+}
+article {
+    background-color: lightgoldenrodyellow;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'century gothic', sans-serif;
+}
+h3 {
+    font-size: 20px;
+}
+iframe {
+    width: 500px;
+    height: 285px;
+    border: 7px black solid;
+}
