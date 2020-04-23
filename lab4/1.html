@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab4</title>
+</head>
+
+<body>
+    <script>
+        str = prompt("Введите первое число: ", "0")
+        x = parseInt(str)
+        str = prompt("Введите второе число: ", "0")
+        y = parseInt(str)
+        s = x + y
+        alert("Сумма равно " + s)
+    </script>
+</body>
+</html>
+
+<!-- 
+    Что будет если ввести строку вместо одного из чисел? 
+    Если строка начинается с числа, функция вернет это число.
+    В противном случае функция parseInt вернет NaN (not a number),
+    соответственно и сумма будет NaN.
+-->

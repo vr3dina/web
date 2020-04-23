@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab4</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", "сектор", "оВз", "бикорг", "воз"];
+
+        function sortString(str) {
+            var arr = str.split('');
+            var sorted = arr.sort();
+            return sorted.join('');
+        }
+
+        function deleteAnagrams(word, startIndex, words) {
+            sortedWord = sortString(word.toLowerCase());
+
+            for (let i = startIndex + 1; i < words.length; i++) {
+                if (sortedWord == sortString(words[i].toLowerCase())) {
+                    words.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        function aclean(arr) {
+            arr.forEach(word => {
+                deleteAnagrams(word, arr.indexOf(word), arr);
+            });
+            return arr;
+        }
+
+        document.write(arr + "<br>");
+        document.write(aclean(arr) + "<br>");
+    </script>
+</body>
+
+</html>

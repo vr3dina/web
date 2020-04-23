@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab4</title>
+</head>
+
+<body>
+    <script>
+
+        var x = prompt("Введите первое число: ", "")
+        while (isNaN(x)) {
+            alert("Ошибка ввода!")
+            x = prompt("Введите первое число: ", "")
+        }
+        var y = prompt("Введите второе число: ", "")
+        while (isNaN(y)) {
+            alert("Ошибка ввода!")
+            y = prompt("Введите второе число: ", "")
+        }
+        var sign = prompt("Введите знак операции(+, -, *, /): ", "")
+        while (sign != '+' && sign != '-' && sign != '*' && sign != '/') {
+            alert("Ошибка ввода!")
+            sign = prompt("Введите знак операции: ", "")
+        }
+        switch (sign) {
+            case '+':
+                result = parseInt(x) + parseInt(y)
+                break
+            case '-': 
+                result = parseInt(x) - parseInt(y)
+                break
+            case '*': 
+                result = parseInt(x) * parseInt(y)
+                break
+            case '/':
+                if (parseInt(y) === 0)
+                    result = "NaN \nДеление на ноль!"
+                else 
+                    result = parseInt(x) / parseInt(y)
+                break
+            default:
+                break
+        }
+        alert(x + " " + sign + " " + y + " = " + result)
+
+    </script>
+
+</body>
