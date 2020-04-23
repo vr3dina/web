@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./scripts.js"></script>
+    <title>products</title>
+</head>
+
+<body>
+    <form name="productsForm" method="post" action="#">
+            <div>
+                <label for="product">Продукт</label>
+                <input type="text" name="product">
+            </div>
+            <div>
+                <label for="price">Цена</label>
+                <input type="number" name="price">
+            </div>
+            <div>
+                <input type="button" value="Добавить" onclick="addItem();">
+            </div>
+    </form>
+    <div>
+        <ul id="productsList">Список продуктов:</ul>
+        <input type="button" value="Общая сумма: " onclick="totalAmount()">
+        <input type="text" name="total" id="totalField" readonly>
+    </div>
+</body>
+
+</html>
