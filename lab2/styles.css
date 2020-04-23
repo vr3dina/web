@@ -4,7 +4,7 @@ body {
     font-family: 'MS Sans Serif', sans-serif;
     display: grid;
     grid-template-columns: 200px 500px 200px;
-    grid-template-rows: 50px auto auto auto auto;
+    grid-template-rows: 50px auto auto auto auto auto;
     grid-gap: 20px;
 }
 .menu {
@@ -57,6 +57,22 @@ td {
 .comments {
     grid-column: 2 / 3;
     grid-row-start: 5;
+}
+.add_review {
+    grid-column: 2 / 3;
+    grid-row-start: 6;
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+}
+.review-block {
+    padding: 5px;
+}
+.review-block label {
+    font-weight: bold;
+}
+.review-block textarea {
+    height: 400px;
+    width: 450px;
 }
 .actors-block {
     grid-column: 1 / 4;
